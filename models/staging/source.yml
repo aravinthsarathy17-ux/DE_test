@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: Raw_banking
+    database: Banking
+    schema: Banking
+    tables:
+      - name: ACCOUNTS
+      - name: BRANCHES
+      - name: CARDS
+      - name: CARD_TRANSACTIONS
+      - name: CUSTOMER
+      - name: EMPLOYEE
+      - name: LOAN
+      - name: LOANPAYMENTS
+      - name: TICKET
+      - name: TRANSACTIONS
+
+      
