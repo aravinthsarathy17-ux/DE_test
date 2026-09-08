@@ -1,0 +1,13 @@
+version: 2
+models:
+    - name: stg_transaction
+      description: transaction_test
+      columns:
+        - name: account_id
+          tests:
+            - not null
+            - unique
+            -  relationships:
+                arguments:
+                  to: ref('stg_accounts')
+                  field: account_id
