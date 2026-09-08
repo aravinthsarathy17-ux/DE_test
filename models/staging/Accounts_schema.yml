@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_accounts
+    description: "staging model for accounts records"
+    columns:
+    
+      - name: customer_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_customer')
+                field: Customer_id
